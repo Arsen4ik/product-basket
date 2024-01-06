@@ -1,0 +1,88 @@
+.button {
+    margin: 0 auto 50px;
+    display: flex;
+    background-color: #2563eb;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 4px #1e40af;
+
+    &:hover {
+        background-color: #4f46e5;
+        box-shadow: 0 4px #3730a3;
+        cursor: pointer;
+    }
+
+    &:active {
+        background-color: #7c3aed;
+        box-shadow: 0 4px #5b21b6;
+    }
+
+    &:disabled {
+        background-color: #a1a1aa;
+        box-shadow: 0 4px #52525b;
+        color: #000000;
+        cursor: no-drop;
+
+        &:hover {
+            background-color: #a1a1aa;
+            box-shadow: 0 4px #52525b;
+            color: #000000;
+            cursor: no-drop;
+        }
+    }
+}
+
+
+.productItem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 10px;
+    margin-bottom: 70px;
+
+    h2,
+    p,
+    span {
+        color: #4f46e5;
+    }
+
+    h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        text-align: center;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: large;
+
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    .minus {
+        justify-self: right;
+        margin: auto 0;
+    }
+
+    .plus {
+        justify-self: left;
+        margin: auto 0;
+    }
+}
+
+.red {
+    background-color: #e11d48;
+    box-shadow: 0 4px #9f1239;
+
+    &:hover {
+        background-color: #dc2626;
+        box-shadow: 0 4px #991b1b;
+    }
+}

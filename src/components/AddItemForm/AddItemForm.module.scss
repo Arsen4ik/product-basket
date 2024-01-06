@@ -1,0 +1,109 @@
+.content {
+    width: 350px;
+    position: relative;
+    // background-color: #4f46e5;
+    background-color: rgba($color: #4f46e5, $alpha: .85);
+    backdrop-filter: blur(1.5px);
+    border-radius: 12px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    h2 {
+        color: white;
+    }
+
+    input {
+        padding: 8px;
+        border-radius: 10px;
+        border: 0;
+        outline: none;
+        box-shadow: 0 4px lightgray;
+
+    }
+
+    .close {
+        font-size: large;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 24px;
+        transition: all ease-in-out .15s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.35);
+        }
+    }
+}
+
+.error-message {
+    color: #fde047;
+    font-size: x-small;
+    position: absolute;
+    top: 115px;
+}
+
+.counter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    button {
+        border-radius: 10px;
+        padding: 10px 20px;
+        font-weight: bold;
+        border: none;
+        background-color: white;
+        box-shadow: 0 4px lightgray;
+
+        &:hover {
+            background-color: lightgray;
+            box-shadow: 0 4px darkgray;
+            cursor: pointer;
+        }
+
+        &:disabled {
+            background-color: #a1a1aa;
+            box-shadow: 0 4px #52525b;
+            color: #000000;
+            cursor: no-drop;
+
+            &:hover {
+                background-color: #a1a1aa;
+                box-shadow: 0 4px #52525b;
+                color: #000000;
+                cursor: no-drop;
+            }
+        }
+    }
+
+    p {
+        color: white;
+
+        span {
+            color: white;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    }
+}
+
+
+.submit {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    background-color: #fde047;
+    box-shadow: 0 4px #facc15;
+    width: fit-content;
+
+    &:hover {
+        background-color: #fbbf24;
+        box-shadow: 0 4px #f59e0b;
+        cursor: pointer;
+    }
+}
